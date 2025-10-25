@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-8 mt-16">
+    <footer className="bg-slate-800 dark:bg-slate-900 text-white py-8 mt-16">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h3 className="text-xl font-bold mb-2">Claude Code Web</h3>

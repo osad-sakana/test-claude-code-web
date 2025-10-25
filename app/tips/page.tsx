@@ -1,8 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb, faEdit, faSearchPlus, faCodeBranch, faExclamationTriangle, faBolt, faBullseye, faGem } from "@fortawesome/free-solid-svg-icons";
+
 export default function Tips() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-purple-600 dark:text-purple-400">
           Claude Code Web Tips
         </h1>
         <p className="text-center text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
@@ -11,9 +14,11 @@ export default function Tips() {
 
         <div className="max-w-6xl mx-auto space-y-8">
           {/* 効率的な使い方 */}
-          <div className="bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl shadow-lg p-8 text-white">
+          <div className="bg-indigo-600 dark:bg-indigo-700 rounded-xl shadow-lg p-8 text-white">
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <span className="text-3xl mr-3">💡</span>
+              <span className="text-3xl mr-3">
+                <FontAwesomeIcon icon={faLightbulb} />
+              </span>
               効率的な使い方
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -50,7 +55,9 @@ export default function Tips() {
           {/* ファイル操作のコツ */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center">
-              <span className="text-3xl mr-3">📝</span>
+              <span className="text-3xl mr-3 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faEdit} />
+              </span>
               ファイル操作のコツ
             </h2>
             <div className="space-y-4">
@@ -95,7 +102,9 @@ export default function Tips() {
           {/* 検索テクニック */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center">
-              <span className="text-3xl mr-3">🔎</span>
+              <span className="text-3xl mr-3 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faSearchPlus} />
+              </span>
               検索テクニック
             </h2>
             <div className="space-y-6">
@@ -176,11 +185,13 @@ export default function Tips() {
           {/* Git操作のベストプラクティス */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center">
-              <span className="text-3xl mr-3">🔀</span>
+              <span className="text-3xl mr-3 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faCodeBranch} />
+              </span>
               Git操作のベストプラクティス
             </h2>
             <div className="space-y-4">
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
+              <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
                 <h3 className="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center">
                   <span className="mr-2">✅</span>
                   変更前にステータス確認
@@ -193,7 +204,7 @@ export default function Tips() {
                 </code>
               </div>
 
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
                 <h3 className="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center">
                   <span className="mr-2">💬</span>
                   わかりやすいコミットメッセージ
@@ -211,7 +222,7 @@ export default function Tips() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
+              <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
                 <h3 className="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center">
                   <span className="mr-2">🌿</span>
                   適切なブランチ管理
@@ -226,7 +237,9 @@ export default function Tips() {
           {/* エラー対処法 */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center">
-              <span className="text-3xl mr-3">⚠️</span>
+              <span className="text-3xl mr-3 text-yellow-600 dark:text-yellow-400">
+                <FontAwesomeIcon icon={faExclamationTriangle} />
+              </span>
               よくあるエラーと対処法
             </h2>
             <div className="space-y-4">
@@ -273,13 +286,31 @@ export default function Tips() {
                   </ul>
                 </div>
               </details>
+
+              <details className="bg-slate-50 dark:bg-slate-700 rounded-lg p-4 cursor-pointer">
+                <summary className="font-semibold text-gray-800 dark:text-gray-200">
+                  ⚠️ GitHub CLI (gh) が利用できない
+                </summary>
+                <div className="mt-3 text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                  <p><strong>注意:</strong> Claude Code Web版の環境ではGitHub CLI (`gh`)が利用できません</p>
+                  <p><strong>対処法:</strong></p>
+                  <ul className="list-disc list-inside pl-4 space-y-1">
+                    <li>issueやPRの情報は、ユーザーに直接提供してもらう</li>
+                    <li>GitHub APIの直接呼び出しも制限される場合がある</li>
+                    <li>gitコマンドは通常通り使用可能（clone, commit, push等）</li>
+                    <li>PRの作成やissueの確認が必要な場合は、ブラウザでGitHubにアクセス</li>
+                  </ul>
+                </div>
+              </details>
             </div>
           </div>
 
           {/* パフォーマンス最適化 */}
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl shadow-lg p-8 text-white">
+          <div className="bg-orange-600 dark:bg-orange-700 rounded-xl shadow-lg p-8 text-white">
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <span className="text-3xl mr-3">⚡</span>
+              <span className="text-3xl mr-3">
+                <FontAwesomeIcon icon={faBolt} />
+              </span>
               パフォーマンス最適化
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -313,12 +344,16 @@ export default function Tips() {
           {/* プロのTips */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center">
-              <span className="text-3xl mr-3">🎯</span>
+              <span className="text-3xl mr-3 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faBullseye} />
+              </span>
               プロのTips
             </h2>
             <div className="space-y-3">
               <div className="flex items-start space-x-3 p-3 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg">
-                <span className="text-xl">💎</span>
+                <span className="text-xl text-indigo-600 dark:text-indigo-400">
+                  <FontAwesomeIcon icon={faGem} />
+                </span>
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                     TodoWriteでタスクを可視化
@@ -331,7 +366,9 @@ export default function Tips() {
               </div>
 
               <div className="flex items-start space-x-3 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                <span className="text-xl">💎</span>
+                <span className="text-xl text-purple-600 dark:text-purple-400">
+                  <FontAwesomeIcon icon={faGem} />
+                </span>
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                     変更は小さく、頻繁に確認
@@ -344,7 +381,9 @@ export default function Tips() {
               </div>
 
               <div className="flex items-start space-x-3 p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
-                <span className="text-xl">💎</span>
+                <span className="text-xl text-pink-600 dark:text-pink-400">
+                  <FontAwesomeIcon icon={faGem} />
+                </span>
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                     ドキュメントを参照する
@@ -357,7 +396,9 @@ export default function Tips() {
               </div>
 
               <div className="flex items-start space-x-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                <span className="text-xl">💎</span>
+                <span className="text-xl text-green-600 dark:text-green-400">
+                  <FontAwesomeIcon icon={faGem} />
+                </span>
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                     テストを書く習慣
@@ -370,7 +411,9 @@ export default function Tips() {
               </div>
 
               <div className="flex items-start space-x-3 p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
-                <span className="text-xl">💎</span>
+                <span className="text-xl text-yellow-600 dark:text-yellow-400">
+                  <FontAwesomeIcon icon={faGem} />
+                </span>
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-gray-200">
                     コードレビューを依頼
