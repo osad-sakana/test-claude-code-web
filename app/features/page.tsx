@@ -1,8 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFolder, faSearch, faBolt, faCheckCircle, faGlobe, faRobot } from "@fortawesome/free-solid-svg-icons";
+
 export default function Features() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-indigo-600 dark:text-indigo-400">
           Claude Code Web の機能
         </h1>
         <p className="text-center text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
@@ -13,7 +16,9 @@ export default function Features() {
           {/* ファイル操作 */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl mr-4">📁</div>
+              <div className="text-3xl mr-4 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faFolder} />
+              </div>
               <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                 ファイル操作
               </h2>
@@ -40,7 +45,9 @@ export default function Features() {
           {/* 検索機能 */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl mr-4">🔍</div>
+              <div className="text-3xl mr-4 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faSearch} />
+              </div>
               <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                 強力な検索機能
               </h2>
@@ -66,7 +73,9 @@ export default function Features() {
           {/* Bashコマンド */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl mr-4">⚡</div>
+              <div className="text-3xl mr-4 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faBolt} />
+              </div>
               <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                 Bashコマンド実行
               </h2>
@@ -100,7 +109,9 @@ export default function Features() {
           {/* タスク管理 */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl mr-4">✅</div>
+              <div className="text-3xl mr-4 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
               <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                 タスク管理
               </h2>
@@ -124,7 +135,9 @@ export default function Features() {
           {/* Web機能 */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl mr-4">🌐</div>
+              <div className="text-3xl mr-4 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faGlobe} />
+              </div>
               <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                 Web機能
               </h2>
@@ -144,7 +157,9 @@ export default function Features() {
           {/* AI Agent */}
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl mr-4">🤖</div>
+              <div className="text-3xl mr-4 text-indigo-600 dark:text-indigo-400">
+                <FontAwesomeIcon icon={faRobot} />
+              </div>
               <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
                 専門エージェント
               </h2>

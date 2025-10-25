@@ -1,12 +1,14 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe, faRocket, faWrench } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
       {/* ヒーローセクション */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-indigo-600 dark:text-indigo-400">
             Claude Code Web
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8">
@@ -40,7 +42,9 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="text-4xl mb-4">🌐</div>
+            <div className="text-4xl mb-4 text-indigo-600 dark:text-indigo-400">
+              <FontAwesomeIcon icon={faGlobe} />
+            </div>
             <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">
               ブラウザベース
             </h3>
@@ -49,7 +53,9 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="text-4xl mb-4">🚀</div>
+            <div className="text-4xl mb-4 text-indigo-600 dark:text-indigo-400">
+              <FontAwesomeIcon icon={faRocket} />
+            </div>
             <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">
               高速レスポンス
             </h3>
@@ -58,7 +64,9 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="text-4xl mb-4">🔧</div>
+            <div className="text-4xl mb-4 text-indigo-600 dark:text-indigo-400">
+              <FontAwesomeIcon icon={faWrench} />
+            </div>
             <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">
               多機能ツール
             </h3>
@@ -128,13 +136,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/features"
-            className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
           >
             全機能を見る
           </Link>
           <Link
             href="/tips"
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
           >
             実用的なTipsを見る
           </Link>
